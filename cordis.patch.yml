@@ -1,0 +1,7 @@
+# dsh-drawer bundle patch —— 把一个双半插件行插入 profile roster。
+# 本地开发时也可直接把这 3 行追加到 ~/.dsh/profiles/<profile>/cordis.patch.yml 的 insert 列表。
+- insert:
+    - id: drawer
+      name: 'dsh-drawer'
+      config:
+        width: 420

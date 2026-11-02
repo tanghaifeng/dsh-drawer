@@ -1,0 +1,56 @@
+{
+  "name": "dsh-drawer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "抽屉：把不常用的全局面板收进左侧抽屉，常用面板留在侧栏；支持拖拽收纳、拖拽排序，并按来源（内置/第三方/本地）分组。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "design"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "license": "MIT",
+  "author": "tanghaifeng",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanghaifeng/dsh-drawer.git"
+  },
+  "homepage": "https://github.com/tanghaifeng/dsh-drawer#readme",
+  "bugs": {
+    "url": "https://github.com/tanghaifeng/dsh-drawer/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "sidebar",
+    "drawer",
+    "plugin"
+  ]
+}
