@@ -17,14 +17,6 @@
 - **持久化**：收起状态与自定义顺序存 `localStorage`，重启保留；卸载插件时恢复全部显示并清理注入的样式。
 - **键盘 / 可访问性**：`Esc` 关闭、`⌘/Ctrl + K` 打开、开关为 `role="switch"`，颜色全部走 DSH 主题令牌（自动适配浅色 / 深色）。
 
-## 截图
-
-> 设计稿示意（真实界面取决于你的侧栏宽度与主题）。
-
-| 关闭态 | 打开态 | 拖拽 / 排序 |
-|---|---|---|
-| ![关闭态](design/drawer-closed.png) | ![打开态](design/drawer-wide.png) | ![拖拽](design/drawer-drag.png) |
-
 ## 安装
 
 这是一个 **本地 bundle 插件**（不是 npm 包），需要接进某个 DSH profile。
@@ -118,11 +110,7 @@ dsh-drawer/
 │   ├── index.js          # host 半：读 profile、注册 /api/dsh-drawer/context
 │   └── client.js         # client 半：入口行、宽抽屉、分组、拖拽/排序（单文件 bundle）
 ├── cordis.patch.yml      # bundle 行（含默认 width）
-├── icon.svg              # 插件包图标
-└── design/               # 设计稿（示意图）
-    ├── drawer-closed.png
-    ├── drawer-wide.png
-    └── drawer-drag.png
+└── icon.svg              # 插件包图标
 ```
 
 ## 开发
