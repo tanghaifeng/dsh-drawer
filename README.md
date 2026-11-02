@@ -25,10 +25,6 @@
 |---|---|---|
 | ![关闭态](design/drawer-closed.png) | ![打开态](design/drawer-wide.png) | ![拖拽](design/drawer-drag.png) |
 
-图标方案（当前为方案 A）：
-
-![图标方案](design/icons-preview.png)
-
 ## 安装
 
 这是一个 **本地 bundle 插件**（不是 npm 包），需要接进某个 DSH profile。
@@ -123,12 +119,10 @@ dsh-drawer/
 │   └── client.js         # client 半：入口行、宽抽屉、分组、拖拽/排序（单文件 bundle）
 ├── cordis.patch.yml      # bundle 行（含默认 width）
 ├── icon.svg              # 插件包图标
-└── design/               # 设计稿与图标源文件
+└── design/               # 设计稿（示意图）
     ├── drawer-closed.png
     ├── drawer-wide.png
-    ├── drawer-drag.png
-    ├── icons-preview.png
-    └── icons/option-*.svg
+    └── drawer-drag.png
 ```
 
 ## 开发
